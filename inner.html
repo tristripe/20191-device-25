@@ -7,28 +7,33 @@
 <body>
 	<header>
 		<a class="header-logo">
-			<img src="http://placehold.it/200x55" alt="Логотип Девайс">
+			DEVICE
 		</a>
-		<ul class="header-service">
-			<li class="header-service-search"><input type="search" placeholder="Поиск по сайту"><input type="submit" value="Найти"></li>
-			<li class="header-service-enter login">Выйти</li>
-			<li class="header-service-compare">Сравнить</li>
-			<li class="header-service-cart">Корзина</li>
-		</ul>
+		<div class="header-service">
+			<input type="search" placeholder="Поиск по сайту" class="header-service-search"><input type="submit" value="Найти" class="header-service-submit">
+			<ul class="header-service-list">
+			<li class="header-service-item"><a class="header-service-enter">Войти</a></li>
+			<li class="header-service-item"><a class="header-service-compare">Сравнить</a></li>
+			<li class="header-service-item"><a class="header-service-cart">Корзина</a></li>
+			</ul>
+		</div>
 		<nav class="header-navigation">
-			<ul class="catalog">
-				<li class="catalog-item"><a href="">Виртуальная реальность</a></li>
-				<li class="catalog-item"><a href="">Фитнес-браслеты</a></li>
-				<li class="catalog-item"><a href="">Квадрокоптеры</a></li>
-				<li class="catalog-item"><a href="">Моноподы для селфи</a></li>
-				<li class="catalog-item"><a href="">Умные часы</a></li>
-				<li class="catalog-item"><a href="">Экшн-камеры</a></li>
-			</ul>
-			<ul class="header-information">
-				<li class="header-information-item"><a href="">Доставка</a></li>
-				<li class="header-information-item"><a href="">Гарантия</a></li>
-				<li class="header-information-item"><a href="">Контакты</a></li>
-			</ul>
+		    <ul class="catalog-menu">
+		        <li class="catalog-menu-item">
+		            <b class="header-navigation-title">Каталог товаров</b>
+		            <ul class="catalog-inner">
+		                <li class="catalog-item"><a href="">Виртуальная реальность</a></li>
+		                <li class="catalog-item"><a href="">Фитнес-браслеты</a></li>
+		                <li class="catalog-item"><a href="">Квадрокоптеры</a></li>
+		                <li class="catalog-item"><a href="">Моноподы для селфи</a></li>
+		                <li class="catalog-item"><a href="">Умные часы</a></li>
+		                <li class="catalog-item"><a href="">Экшн-камеры</a></li>
+		            </ul>
+		        </li>
+		        <li class="catalog-menu-item">Доставка</li>
+		        <li class="catalog-menu-item">Гарантия</li>
+		        <li class="catalog-menu-item">Контакты</li>
+		    </ul>
 		</nav>
 	</header>
 	<main>
@@ -57,7 +62,7 @@
 			<ul class="product-list">
 				<li class="product-item">
 					<img src="http://placehold.it/360x380" alt="Любительская селфи-палка" class="product-image">
-					<b class="product-title">Любительская селфи-палка</b>
+					<h3 class="product-title">Любительская селфи-палка</h3>
 					<span class="product-price">500 руб.</span>
 					<div class="product-hover">
 						<a href="" class="product-buy">В корзину</a>
@@ -66,7 +71,7 @@
 				</li>
 				<li class="product-item">
 					<img src="http://placehold.it/360x380" alt="Любительская селфи-палка" class="product-image">
-					<b class="product-title">Профессиональная селфи-палка</b>
+					<h3 class="product-title">Профессиональная селфи-палка</h3>
 					<span class="product-price">1500 руб.</span>
 					<div class="product-hover">
 						<a href="" class="product-buy">В корзину</a>
@@ -75,7 +80,7 @@
 				</li>
 				<li class="product-item">
 					<img src="http://placehold.it/360x380" alt="Любительская селфи-палка" class="product-image">
-					<b class="product-title">Непотопляемая селфи-палка</b>
+					<h3 class="product-title">Непотопляемая селфи-палка</h3>
 					<span class="product-price">2500 руб.</span>
 					<div class="product-hover">
 						<a href="" class="product-buy">В корзину</a>
@@ -84,7 +89,7 @@
 				</li>
 				<li class="product-item">
 					<img src="http://placehold.it/360x380" alt="Любительская селфи-палка" class="product-image">
-					<b class="product-title">Селфи-палка «Следуй за мной»</b>
+					<h3 class="product-title">Селфи-палка «Следуй за мной»</h3>
 					<span class="product-price">4900 руб.</span>
 					<div class="product-hover">
 						<a href="" class="product-buy">В корзину</a>
@@ -95,28 +100,32 @@
 			</ul>
 		</section>
 	</main>
-<footer>
+	<footer>
 		<a class="footer-logo">
-			<img src="http://placehold.it/200x55" alt="Логотип Девайс">
+			DEVICE
 		</a>
-		<ul class="footer-service">
-			<li class="footer-service-search"><input type="search" placeholder="Поиск по сайту"><input type="submit" value="Найти"></li>
-			<li class="footer-service-enter login">Выйти</li>
-			<li class="footer-service-compare">Сравнить</li>
-			<li class="footer-service-cart">Корзина</li>
-		</ul>
+		<div class="footer-service">
+			<ul class="footer-service-list">
+			<li class="footer-service-item"><a class="footer-service-enter">Войти</a></li>
+			<li class="footer-service-item"><a class="footer-service-compare">Сравнить</a></li>
+			<li class="footer-service-item"><a class="footer-service-cart">Корзина</a></li>
+			</ul>
+		</div>
 		<p class="footer-address">г.Москва, ул. Строителей, 15</p>
-		<ul class="footer-information">
+		<ul class="footer-information-list">
 			<li class="footer-information-item"><a href="">Доставка</a></li>
 			<li class="footer-information-item"><a href="">Гарантия</a></li>
 			<li class="footer-information-item"><a href="">Контакты</a></li>
 		</ul>
-		<p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
+		<a href="tel:+74954959595" class="footer-phone">Тел.: +7 (495) 495-95-95</a>
 		<ul class="footer-social">
 			<li class="social-button"><img src="http://placehold.it/40x40" alt="Фейсбук"></li>
 			<li class="social-button"><img src="http://placehold.it/40x40" alt="Инстаграм"></li>
 			<li class="social-button"><img src="http://placehold.it/40x40" alt="Твиттер"></li>
 		</ul>
+		<a href="https://htmlacademy.ru/">
+			<img src="http://placehold.it/30x30" alt="htmlacademy.ru">
+		</a>
 	</footer>
 </body>
 </html>
