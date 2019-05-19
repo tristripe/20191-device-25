@@ -12,9 +12,9 @@
 		<div class="header-service">
 			<input type="search" placeholder="Поиск по сайту" class="header-service-search"><input type="submit" value="Найти" class="header-service-submit">
 			<ul class="header-service-list">
-			<li class="header-service-item"><a class="header-service-enter">Войти</a></li>
-			<li class="header-service-item"><a class="header-service-compare">Сравнить</a></li>
-			<li class="header-service-item"><a class="header-service-cart">Корзина</a></li>
+			<li class="header-service-item"><a href="" class="header-service-enter">Войти</a></li>
+			<li class="header-service-item"><a href="" class="header-service-compare">Сравнить</a></li>
+			<li class="header-service-item"><a href="" class="header-service-cart">Корзина</a></li>
 			</ul>
 		</div>
 		<nav class="header-navigation">
@@ -30,9 +30,9 @@
 		                <li class="catalog-item"><a href="">Экшн-камеры</a></li>
 		            </ul>
 		        </li>
-		        <li class="catalog-menu-item">Доставка</li>
-		        <li class="catalog-menu-item">Гарантия</li>
-		        <li class="catalog-menu-item">Контакты</li>
+		        <li class="catalog-menu-item"><a href="">Доставка</a></li>
+		        <li class="catalog-menu-item"><a href="">Гарантия</a></li>
+		        <li class="catalog-menu-item"><a href="">Контакты</a></li>
 		    </ul>
 		</nav>
 	</header>
@@ -52,8 +52,10 @@
 		<section class="contacts">
 			<h2>Контакты</h2>
 			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-			<img src="img/map.jpg" width="560" height="222" alt="Карта">
-			<a href="" class="contacts-link">Напишите нам</a>
+			<a href="" class="map-link">
+				<img src="img/map.jpg" width="560" height="222" alt="Адрес магазина - г. Москва, ул. Строителей 15">
+			</a>
+			<button class="contacts-button">Напишите нам</button>
 		</section>
 	</main>
 	<footer>
@@ -62,9 +64,9 @@
 		</a>
 		<div class="footer-service">
 			<ul class="footer-service-list">
-			<li class="footer-service-item"><a class="footer-service-enter">Войти</a></li>
-			<li class="footer-service-item"><a class="footer-service-compare">Сравнить</a></li>
-			<li class="footer-service-item"><a class="footer-service-cart">Корзина</a></li>
+			<li class="footer-service-item"><a href="" class="footer-service-enter">Войти</a></li>
+			<li class="footer-service-item"><a href="" class="footer-service-compare">Сравнить</a></li>
+			<li class="footer-service-item"><a href="" class="footer-service-cart">Корзина</a></li>
 			</ul>
 		</div>
 		<p class="footer-address">г.Москва, ул. Строителей, 15</p>
@@ -75,13 +77,40 @@
 		</ul>
 		<a href="tel:+74954959595" class="footer-phone">Тел.: +7 (495) 495-95-95</a>
 		<ul class="footer-social">
-			<li class="social-button"><img src="img/svg/fb.svg" width="32" height="32" alt="Фейсбук"></li>
-			<li class="social-button"><img src="img/svg/instagram.svg" width="32" height="32" alt="Инстаграм"></li>
-			<li class="social-button"><img src="img/svg/twitter.svg" width="32" height="32" alt="Твиттер"></li>
+			<li class="social-button"><a href=""><img src="img/svg/fb.svg" width="32" height="32" alt="Магазин DEVICE в Facebook" aria-label="Магазин DEVICE в Facebook"></a></li>
+			<li class="social-button"><a href=""><img src="img/svg/instagram.svg" width="32" height="32" alt="Магазин DEVICE в Instagram" aria-label="Магазин DEVICE в Instagram"></a></li>
+			<li class="social-button"><a href=""><img src="img/svg/twitter.svg" width="32" height="32" alt="Магазин DEVICE в Twitter" aria-label="Магазин DEVICE в Twitter"></a></li>
 		</ul>
 		<a href="https://htmlacademy.ru/">
-			<img src="img/svg/logo-html.svg" width="27" height="35" alt="htmlacademy.ru">
+			<img src="img/svg/logo-html.svg" width="27" height="35" alt="Сайт htmlacademy">
 		</a>
 	</footer>
+	<div class="map-popup">
+		<img src="img/map-big.jpg" alt="" class="map-popup-image" width="960" height="560"  alt="Адрес магазина - г. Москва, ул. Строителей 15">
+		<img src="img/misc/modal-close-popup.png" class="map-popup-close" width="55" height="55" alt="Закрыть карту">
+	</div>
+	<div class="contacts-popup">
+		<fieldset class="contacts-popup-fieldset">
+			<legend class="visually-hidden">
+				Напишите нам!
+			</legend>
+			<form action="" class="contacts-popup-form" method="">
+			<label>
+				Ваше имя:
+				<input type="text" placeholder="Имя Фамилия" name="form-name" class="contacts-popup-name" required> 
+			</label>
+			<label>
+				Ваш e-mail:
+				<input type="email" placeholder="email@example.com" name="form-email" class="contacts-popup-email" required>
+			</label>
+			<label>
+				Текст письма:
+				<textarea name="form-textarea" cols="30" rows="10" placeholder="В свободной форме" class="contacts-popup-textarea"></textarea>
+			</label>
+			<button class="contacts-popup-submit" type="submit">Отправить</button>
+			</form>
+		</fieldset>
+		<img src="img/misc/modal-close-popup.png" class="contacts-popup-close" width="55" height="55" alt="Закрыть форму">
+	</div>
 </body>
 </html>
