@@ -7,14 +7,17 @@
 <body>
 	<header>
 		<a class="header-logo">
-			DEVICE
+			<img src="img/logo-header.png" alt="Интернет-магазин DEVICE" width="163" height="35">
 		</a>
 		<div class="header-service">
-			<input type="search" placeholder="Поиск по сайту" class="header-service-search"><input type="submit" value="Найти" class="header-service-submit">
+			<form action="" class="header-search-form">
+				<input type="search" placeholder="Поиск по сайту" class="header-search">
+				<input type="submit" value="Найти" class="header-submit">
+			</form>
 			<ul class="header-service-list">
-			<li class="header-service-item"><a href="" class="header-service-enter">Войти</a></li>
-			<li class="header-service-item"><a href="" class="header-service-compare">Сравнить</a></li>
-			<li class="header-service-item"><a href="" class="header-service-cart">Корзина</a></li>
+				<li class="header-service-item"><a href="" class="header-service-enter">Войти</a></li>
+				<li class="header-service-item"><a href="" class="header-service-compare">Сравнить</a></li>
+				<li class="header-service-item"><a href="" class="header-service-cart">Корзина</a></li>
 			</ul>
 		</div>
 		<nav class="header-navigation">
@@ -60,7 +63,7 @@
 	</main>
 	<footer>
 		<a class="footer-logo">
-			DEVICE
+			<img src="img/logo-footer.png" alt="Интернет-магазин DEVICE" width="163" height="35">
 		</a>
 		<div class="footer-service">
 			<ul class="footer-service-list">
@@ -86,31 +89,39 @@
 		</a>
 	</footer>
 	<div class="map-popup">
-		<img src="img/map-big.jpg" alt="" class="map-popup-image" width="960" height="560"  alt="Адрес магазина - г. Москва, ул. Строителей 15">
-		<img src="img/misc/modal-close-popup.png" class="map-popup-close" width="55" height="55" alt="Закрыть карту">
+		<img src="img/map-big.jpg" class="map-popup-image" width="960" height="560"  alt="Адрес магазина - г. Москва, ул. Строителей 15">
+		<button type="button" class="map-popup-close" aria-label="Закрыть карту">
+		</button>
 	</div>
 	<div class="contacts-popup">
-		<fieldset class="contacts-popup-fieldset">
-			<legend class="visually-hidden">
-				Напишите нам!
-			</legend>
-			<form action="" class="contacts-popup-form" method="">
-			<label>
-				Ваше имя:
-				<input type="text" placeholder="Имя Фамилия" name="form-name" class="contacts-popup-name" required> 
-			</label>
-			<label>
-				Ваш e-mail:
-				<input type="email" placeholder="email@example.com" name="form-email" class="contacts-popup-email" required>
-			</label>
-			<label>
-				Текст письма:
-				<textarea name="form-textarea" cols="30" rows="10" placeholder="В свободной форме" class="contacts-popup-textarea"></textarea>
-			</label>
-			<button class="contacts-popup-submit" type="submit">Отправить</button>
-			</form>
-		</fieldset>
-		<img src="img/misc/modal-close-popup.png" class="contacts-popup-close" width="55" height="55" alt="Закрыть форму">
+		<form action="" class="contacts-popup-form" method="">
+			<section class="contacts-popup-section">
+				<h2 class="visually-hidden">
+					Напишите нам!
+				</h2>
+				<p class="contacts-popup-item">
+					<label>
+						Ваше имя:
+						<input type="text" placeholder="Имя Фамилия" name="form-name" class="contacts-popup-name" required> 
+					</label>
+				</p>
+				<p class="contacts-popup-item">
+					<label>
+						Ваш e-mail:
+						<input type="email" placeholder="email@example.com" name="form-email" class="contacts-popup-email" required>
+					</label>
+				</p>
+				<p class="contacts-popup-item">
+					<label>
+						Текст письма:
+						<textarea name="form-textarea" cols="30" rows="10" placeholder="В свободной форме" class="contacts-popup-textarea"></textarea>
+					</label>
+				</p>
+				<button class="contacts-popup-submit">Отправить</button>
+			</section>
+		</form>
+		<button type="button" class="contacts-popup-close" alt="Закрыть форму">
+		</button>
 	</div>
 </body>
 </html>
