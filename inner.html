@@ -47,7 +47,8 @@
 			<li class="breadcrumb-item"><a href="">Моноподы для селфи</a></li>
 		</ul>
 		<form action="" class="filter-form">
-			<div class="filter">
+			<fieldset class="filter-color-fieldset">
+				<legend>Цвет</legend>
 				<ul class="filter-color-list">
 					<li class="filter-color-item">
 						<label><input type="checkbox" name="filter-option-1"  checked>Черный</label>
@@ -65,6 +66,9 @@
 						<label><input type="checkbox" name="filter-option-5" >Розовый</label>
 					</li>
 				</ul>
+			</fieldset>
+			<fieldset class="filter-bluetooth-fieldset">
+				<legend>Bluetooth</legend>
 				<ul class="filter-bluetooth-list">
 					<li class="filter-bluetooth-item">
 						<label>
@@ -77,8 +81,8 @@
 						</label>
 					</li>
 				</ul>
-				<button type="submit" class="filter-submit">Показать</button>
-			</div>
+			</fieldset>
+			<button type="submit" class="filter-submit">Показать</button>
 		</form>
 		<section class="product-section">
 			<h2 class="visually-hidden">Список селфи-палок</h2>
