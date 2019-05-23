@@ -1,18 +1,6 @@
 /* service */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap');
-@font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-ExtraBold.eot');
-    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
-        url('../fonts/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Gilroy-ExtraBold.woff') format('woff'),
-        url('../fonts/Gilroy-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-
 .visually-hidden {
-position: absolute;
+	position: absolute;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 	clip: rect(1px, 1px, 1px, 1px);
 	padding:0;
@@ -25,13 +13,15 @@ position: absolute;
 /* body and global*/
 body {
 	font-size: 15px;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
+	font-family: "Open Sans","Arial",sans-serif;
+	font-weight: lighter;
+	margin: 0;
+	line-height: 120%;
 }
 
 
 /* header styles */
-header {
+.header-main {
 	background-color: #f7e296;
 	padding: 0 60px;
 	margin-top: 30px;
@@ -46,22 +36,22 @@ header {
 	opacity: 0.3;
 }
 .header-search {
-	background: #f7e296;
+	background: #f7e296 url(../img/misc/search.png) no-repeat left center;
 	border: 0;
 	width: 355px;
 	color: #000;
-	opacity: 0.3;
 	padding-top: 17px;
 	padding-bottom: 15px;
 	padding-right: 15px;
+	padding-left: 35px;
 	margin-right: -5px;
 	border-bottom: 2px solid transparent;
 }
-.header-search:before {
-	background: url(../img/misc/search.png) no-repeat left center;
-	content: " "; /* Элемент before для иконки лупы не срабатывает */
+
+.header-search::-webkit-input-placeholder {
+	opacity: 0.3;
 }
-.header-search:hover {
+.header-search:hover::-webkit-input-placeholder{
 	opacity: 0.6;
 }
 .header-search:focus {
@@ -113,13 +103,13 @@ header {
 	opacity: 0.3;
 }
 .header-navigation-title {
-	font-family: Gilroy;
+	font-family: "Gilroy","Arial",sans-serif;
 	text-transform: uppercase;
 	font-size: 24px;
-	letter-spacing: 5px; /* ?? */
+	letter-spacing: 3.6px;
 }
 .catalog-menu-item a{
-	font-family: Gilroy;
+	font-family: "Gilroy","Arial",sans-serif;
 	text-transform: uppercase;
 	font-size: 18px;
 	letter-spacing: 5px; /* ?? */
@@ -136,8 +126,9 @@ header {
 	list-style: none;
 }
 .catalog-item a{
-	font-family: Open Sans;
+	font-family: "Open Sans","Arial",sans-serif;
 	font-size: 15px;
+	font-weight: 300;
 	text-transform: none;
 	letter-spacing: normal;
 }
@@ -163,36 +154,36 @@ header {
 
 /* Content on main page */
 .about h2 {
-	font-family: Gilroy;
+	font-family: "Gilroy","Arial",sans-serif;
 	font-size: 47px;
 }
 .about p {
-	font-family: Open Sans;
-}
-.about-item {
-	font-family: Gilroy;
-	font-size: 16px;
+	font-family: "Open Sans","Arial",sans-serif;
+	font-weight: 300;
+	line-height: 30px;
 }
 .contacts h2 {
-	font-family: Gilroy;
+	font-family: "Gilroy","Arial",sans-serif;
 	font-size: 47px;
 }
 .contacts p {
-	font-family: Open Sans;
+	font-family: "Open Sans","Arial",sans-serif;
+	line-height: 30px;
 }
 .about-item {
-	font-family: Gilroy;
+	font-family: "Gilroy","Arial",sans-serif;
 	font-size: 16px;
+	line-height: 40px;
 }
 
 
 /* Catalog content */
 .product-title {
-	font-family: Gilroy;
+	font-family: "Gilroy","Arial",sans-serif;
 	font-size: 18px;
 }
 .product-price {
-	font-family: Gilroy;
+	font-family: "Gilroy","Arial",sans-serif;
 }
 .product-item {
 	list-style: none;
@@ -203,10 +194,12 @@ header {
 .filter-color-item {
 	list-style: none;
 	font-size: 14px;
+	line-height: 40px;
 }
 .filter-bluetooth-item {
 	list-style: none;
 	font-size: 14px;
+	line-height: 40px;
 }
 .filter-color-fieldset {
 	border: none;
@@ -215,11 +208,11 @@ header {
 	border: none;
 }
 .filter-color-legend {
-	font-family: Gilroy;
+	font-family: "Gilroy","Arial",sans-serif;
 	font-size: 18px;
 }
 .filter-bluetooth-legend {
-	font-family: Gilroy;
+	font-family: "Gilroy","Arial",sans-serif;
 	font-size: 18px;
 }
 /* footer */
@@ -256,7 +249,7 @@ footer {
 	padding: 10px 20px;
 }
 .footer-information-list a {
-	font-family: Gilroy;
+	font-family: "Gilroy","Arial",sans-serif;
 	font-size: 18px;
 	text-transform: uppercase;
 	color: #fff;
