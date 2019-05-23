@@ -1,8 +1,11 @@
 @font-face {
   font-family: 'Gilroy';
-  src: url('../fonts/Gilroy-ExtraBold.woff') format('woff')
+  src: url('../fonts/Gilroy-ExtraBold.woff') format('woff');
 }
-
+@font-face {
+  font-family: 'Gilroy Light';
+  src: url('../fonts/Gilroy-Light.woff') format('woff');
+}
 /* service */
 .visually-hidden {
 	position: absolute;
@@ -188,7 +191,7 @@ body {
 	font-size: 18px;
 }
 .product-price {
-	font-family: "Gilroy","Arial",sans-serif;
+	font-family: "Gilroy Light","Arial",sans-serif;
 }
 .product-item {
 	list-style: none;
