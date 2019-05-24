@@ -24,19 +24,10 @@ body {
 	font-family: "Open Sans","Arial",sans-serif;
 	font-weight: lighter;
 	margin: 0;
-	line-height: 120%;
 }
 
 
 /* header styles */
-.header-main {
-	background-color: #f7e296;
-	padding: 0 60px;
-	margin-top: 30px;
-}
-.header-logo img{
-	margin-top: -19px;
-}
 .header-logo:hover {
 	opacity: 0.6;
 }
@@ -113,7 +104,7 @@ body {
 .header-navigation-title {
 	font-family: "Gilroy","Arial",sans-serif;
 	text-transform: uppercase;
-	font-size: 24px;
+	font-size: 18px;
 	letter-spacing: 3.6px;
 }
 .catalog-menu-item a{
@@ -147,6 +138,7 @@ body {
 /* breadcrumb */
 .breadcrumb {
 	list-style: none;
+	display: flex;
 }
 .breadcrumb a {
 	text-decoration: none;
@@ -226,6 +218,10 @@ body {
 /* footer */
 footer {
 	background-color: #464646;
+	display: flex;
+  	flex-grow: 0;
+  	flex-shrink: 0;
+  	flex-basis: auto;
 }
 .footer-address {
 	color: #fff;
@@ -290,4 +286,88 @@ footer {
 }
 .contacts-popup {
 	display: none;
+}
+
+/* Grids  */
+.header-wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	background-color: #f7e296;
+	display: flex;
+	flex-direction: column;
+}
+.main-wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+}
+.footer-wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+}
+.header-service {
+	display: flex;
+	flex-direction: row;
+}
+.header-service-list {
+	display: flex;
+}
+.catalog-inner {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 300px;
+}
+.catalog-menu {
+	display: flex;
+}
+.footer-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+.footer-service {
+	display: flex;
+}
+.footer-service-list {
+	display: flex;
+}
+.footer-address-wrapper {
+	display: flex;
+}
+.footer-information-list {
+	display: flex;
+}
+.footer-social-wrapper {
+	display: flex;
+}
+.footer-social {
+	display: flex;
+}
+.global-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+footer {
+}
+
+.content-filter-wrapper {
+	display: flex;
+	flex-direction: row;
+}
+.product-list {
+	display: flex;
+	width: 820px;
+	flex-wrap: wrap;	
+}
+.main-content-wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
 }
