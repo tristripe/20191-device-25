@@ -300,13 +300,13 @@ footer {
 	flex-direction: column;
 }
 .main-wrapper {
-	width: 1200px;
+	width: 1160px;
 	margin: 0 auto;
 	padding: 0 20px;
 	display: flex;
 }
 .footer-wrapper {
-	width: 1200px;
+	width: 1160px;
 	margin: 0 auto;
 	padding: 0 20px;
 	display: flex;
