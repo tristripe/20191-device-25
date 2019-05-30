@@ -249,8 +249,23 @@ body {
 .breadcrumb {
 	list-style: none;
 	display: flex;
+	align-items: center;
+	padding-left: 62px;
+	margin-top: 0;
 }
-
+.breadcrumb-item {
+	padding-right: 20px;
+	padding-left: 20px;
+	background-image: url(../img/svg/nav-arrow.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.breadcrumb :first-child {
+	padding-left: 0;
+}
+.breadcrumb :last-child {
+	background-image: none;
+}
 .breadcrumb a {
 	text-decoration: none;
 	color: #000;
@@ -266,6 +281,14 @@ body {
 }
 
 /* Content on main page */
+.content-title {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: bold;
+	font-size: 47px;
+	padding-left: 60px;
+	margin-bottom: 22px;
+}
+
 .about {
 	width: 720px;
 	margin-right: 160px;
@@ -336,6 +359,7 @@ body {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: bold;
 	font-size: 18px;
+	width: 300px;
 }
 
 .product-price {
@@ -344,10 +368,92 @@ body {
 }
 
 .product-item {
+	position: relative;
 	list-style: none;
+	margin-right: 40px;
+	margin-bottom: 50px;
+}
+
+.product-new {
+	position: absolute;
+	top: 29px;
+	right: 35px;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	opacity: 0.2;
+	border: 2px solid #000;
+	border-radius: 50%;
+	display: block;
+	text-align: center;
+	padding-top: 20px;
+	padding-right: 14px;
+	padding-bottom: 20px;
+	padding-left: 14px;
+}
+
+.product-hover {
+	position: absolute;
+    background-color: #eee;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 360px;
+}
+
+.product-list li:nth-child(2n) {
+	margin-right: 0;
+}
+
+.product-text-wrapper {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+.product-image {
+	margin-bottom: 10px;
 }
 
 /* filter */
+.filter-form {
+	background-color: #eee;
+	width: 350px;
+	padding-right: 70px;
+	padding-left: 80px;
+}
+
+.filter-range {
+	border-top: 2px solid #000;
+}
+
+.filter-range-title {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.filter-color {
+	border-top: 2px solid #000;
+}
+
+.filter-color-title {
+	margin-top: 10px;
+}
+
+.filter-bluetooth {
+	border-top: 2px solid #000;
+}
+
+.filter-bluetooth-title {
+	margin-top: 10px;
+}
 
 .filter-color-item {
 	list-style: none;
@@ -361,25 +467,39 @@ body {
 	line-height: 40px;
 }
 
-.filter-color-fieldset {
-	border: none;
-}
 
-.filter-bluetooth-fieldset {
-	border: none;
-}
-
-.filter-color-legend {
+.filter-color-title {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: bold;
 	font-size: 18px;
 }
 
-.filter-bluetooth-legend {
+.filter-bluetooth-title {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: bold;
 	font-size: 18px;
 }
+
+/* Checkbox and radio style  */
+.input-checkbox,
+.input-radio {
+	display: none;
+}
+
+.filter-color-list {
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.filter-color-item {
+	background-image: url(../img/svg/checkbox-off.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 40px;
+}
+
+
 
 /* footer */
 .footer-main {
@@ -480,6 +600,10 @@ body {
 	text-decoration: none;
 }
 
+.social-button a {
+	display: block;
+}
+
 .footer-social li {
 	list-style: none;
 	opacity: 0.3;
@@ -500,13 +624,6 @@ body {
 
 .academy-link:active {
 	opacity: 0.3;
-}
-
-.social-fb-link {
-	display: block;
-	background-image: url(../img/svg/fb.svg);
-	background-repeat: no-repeat;
-	background-position: center center;
 }
 
 /* popups */
@@ -601,22 +718,35 @@ body {
 }
 
 .footer-social {
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 	display: flex;
 	align-items: center;
 }
+.footer-social :last-child {
+	margin-right: 0;
+}
 
 .content-filter-wrapper {
-	display: flex;
+    display: flex;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .product-list {
+	background-color: #fff;
 	display: flex;
-	width: 820px;
+	width: 850px;
 	flex-wrap: wrap;
+	padding-left: 70px;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
-.main-content-wrapper {
-	width: 1160px;
+.breadcrumb-wrapper {
+	width: 1200px;
 	margin-right: auto;
 	margin-left: auto;
 	padding-right: 20px;
@@ -632,6 +762,6 @@ body {
 }
 
 /* helpers */
-.padding-bottom-90 {
-	padding-bottom: 50px;
+.about-text-container {
+	padding-bottom: 20px;
 }
