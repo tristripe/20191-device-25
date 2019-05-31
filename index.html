@@ -58,7 +58,7 @@
 						<li class="about-item">Автотрейдинг</li>
 						<li class="about-item">ЖелДорЭкспедиция</li>
 					</ul>
-					<a href="" class="about-link">Подробнее о нас</a>
+					<a href="" class="about-link button-device">Подробнее о нас</a>
 				</section>
 				<section class="contacts">
 					<h2 class="contacts-title">Контакты</h2>
@@ -66,7 +66,7 @@
 					<a href="" class="map-link">
 						<img src="img/map.jpg" width="560" height="222" alt="Адрес магазина - г. Москва, ул. Строителей 15">
 					</a>
-					<button class="contacts-button">Напишите нам</button>
+					<button class="contacts-button button-device">Напишите нам</button>
 				</section>
 			</div>
 		</main>
@@ -122,39 +122,30 @@
 	</footer>
 	<div class="map-popup">
 		<img src="img/map-big.jpg" class="map-popup-image" width="960" height="560"  alt="Адрес магазина - г. Москва, ул. Строителей 15">
-		<button type="button" class="map-popup-close">
-			Закрыть карту
-		</button>
+		<button type="button" class="map-popup-close"><span class="visually-hidden">Закрыть карту</span></button>
 	</div>
-	<div class="contacts-popup">
-		<form action="https://echo.htmlacademy.ru" method="POST" class="contacts-popup-form" >
-			<section class="contacts-popup-section">
-				<h2 class="visually-hidden">
-					Напишите нам!
-				</h2>
-				<p class="contacts-popup-item">
-					<label>
-						Ваше имя:
-						<input type="text" placeholder="Имя Фамилия" name="form-name" class="contacts-popup-name" required> 
-					</label>
-				</p>
-				<p class="contacts-popup-item">
-					<label>
-						Ваш e-mail:
-						<input type="email" placeholder="email@example.com" name="form-email" class="contacts-popup-email" required>
-					</label>
-				</p>
-				<p class="contacts-popup-item">
-					<label>
-						Текст письма:
-						<textarea name="form-textarea" cols="30" rows="10" placeholder="В свободной форме" class="contacts-popup-textarea"></textarea>
-					</label>
-				</p>
-				<button class="contacts-popup-submit">Отправить</button>
-			</section>
-		</form>
-		<button type="button" class="contacts-popup-close" ><span>Закрыть форму</span>
-		</button>
+	<div class="contacts-popup-wrapper">
+		<button type="button" class="contacts-popup-close"><span class="visually-hidden">Закрыть форму</span></button>
+		<div class="contacts-popup">
+			<form action="https://echo.htmlacademy.ru" method="POST" class="contacts-popup-form">
+				<h2 class="visually-hidden">Напишите нам!</h2>
+				<section class="contacts-popup-section">
+						<p class="contacts-popup-item">
+							<label class="label-write" for="write-name">Ваше имя:</label>
+							<input type="text" id="write-name" placeholder="Имя Фамилия" name="form-name" class="contacts-popup-name" required> 
+						</p>
+						<p class="contacts-popup-item">
+							<label class="label-write" for="write-email">Ваш e-mail:</label>
+							<input type="email" id="write-email" placeholder="email@example.com" name="form-email" class="contacts-popup-email" required>
+						</p>
+						<p class="contacts-popup-item-textarea">
+							<label class="label-write" for="write-textarea">Текст письма:</label>
+							<textarea name="form-textarea" cols="30" rows="10" id="write-textarea" placeholder="В свободной форме" class="contacts-popup-textarea"></textarea>
+						</p>
+					<button class="contacts-popup-submit button-device">Отправить</button>
+				</section>
+			</form>
+		</div>
 	</div>
 </body>
 </html>
