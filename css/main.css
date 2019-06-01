@@ -928,11 +928,29 @@ input[type="radio"].visually-hidden {
 }
 
 .content-filter-wrapper {
+	position: relative;
     display: flex;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Серая декорация, вариант №1  */
+.content-filter-background {
+	background: linear-gradient(to right, #eee 355px, white 1000px);
+}
+
+/* Серая декорация, вариант №2
+.content-filter-wrapper:before {
+	content: " ";
+    background-color: #eee;
+    width: 355px;
+    position: absolute;
+    top: 0;
+    left: -355px;
+    height: 100%;
+}
+*/
 
 .product-list {
 	background-color: #fff;
