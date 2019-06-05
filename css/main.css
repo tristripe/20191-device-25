@@ -203,6 +203,7 @@ body {
 
 .catalog-menu-item:first-child {
 	width: 540px;
+	position: relative;
 }
 
 .catalog-menu-item:nth-child(2) {
@@ -869,15 +870,23 @@ input[type="radio"].visually-hidden {
 .catalog-inner {
 	display: none;
 	flex-wrap: wrap;
-	width: 540px;
+	width: 1160px;
+	background-color: #f7e296;
 	padding-top: 22px;
-	padding-bottom: 0;
-	padding-left: 0;
+	padding-right: 500px;
+	padding-bottom: 34px;
+	padding-left: 60px;
+	position: absolute;
+	top: 20px;
+	left: -60px;
+	z-index: 1;
 }
 
-.header-navigation-title:hover + .catalog-inner {
+.header-navigation-title:hover + .catalog-inner,
+.catalog-inner:hover {
 	display: flex;
 }
+
 
 .catalog-menu {
 	display: flex;
