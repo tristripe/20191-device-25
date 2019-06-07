@@ -431,6 +431,14 @@ body {
 	text-decoration: none;
 }
 
+.product-text-wrapper:hover .product-title {
+	opacity: 0.6;
+}
+
+.product-text-wrapper:active .product-title {
+	opacity: 0.3;
+}
+
 .product-title {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: bold;
@@ -484,7 +492,7 @@ body {
     display: none;
 }
 
-.product-item:hover .product-hover {
+.product-image-wrapper:hover + .product-hover {
 	display: flex;
 }
 
