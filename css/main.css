@@ -492,7 +492,7 @@ body {
     display: none;
 }
 
-.product-image-wrapper:hover + .product-hover {
+.product-image-wrapper:hover ~ .product-hover {
 	display: flex;
 }
 
