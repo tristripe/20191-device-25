@@ -9,7 +9,7 @@
 </head>
 <body>
 	<header class="header-main">
-		<div class="header-wrapper">
+		<div class="header-wrapper-catalog">
 			<a class="header-logo">
 				<img src="img/logo-header.png" alt="Интернет-магазин DEVICE" width="163" height="35">
 			</a>
@@ -19,27 +19,30 @@
 					<button type="submit" class="header-submit">Найти</button>
 				</form>
 				<ul class="header-service-list">
-					<li class="header-service-item"><a href="" class="header-service-enter">Валентин Петухов <span class="user-exit">Выйти</span></a></li>
-					<li class="header-service-item"><a href="" class="header-service-compare">Сравнить</a></li>
-					<li class="header-service-item"><a href="" class="header-service-cart">Корзина</a></li>
+					<li class="header-service-item">
+						<a href="#" class="header-service-enter">Валентин Петухов</a> 
+						<a href="#"><span class="user-exit">Выйти</span></a>
+					</li>
+					<li class="header-service-item"><a href="#" class="header-service-compare">Сравнить</a></li>
+					<li class="header-service-item"><a href="#" class="header-service-cart">Корзина</a></li>
 				</ul>
 			</div>
 			<nav class="header-navigation">
 				<ul class="catalog-menu">
 					<li class="catalog-menu-item">
-					    <b class="header-navigation-title">Каталог товаров</b>
+					    <a href="#" class="header-navigation-title">Каталог товаров</a>
 					    <ul class="catalog-inner">
-					        <li class="catalog-item"><a href="">Виртуальная реальность</a></li>
-					        <li class="catalog-item"><a href="">Фитнес-браслеты</a></li>
-					        <li class="catalog-item"><a href="">Квадрокоптеры</a></li>
-					        <li class="catalog-item"><a href="">Моноподы для селфи</a></li>
-					        <li class="catalog-item"><a href="">Умные часы</a></li>
-					        <li class="catalog-item"><a href="">Экшн-камеры</a></li>
+					        <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
+					        <li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
+					        <li class="catalog-item"><a href="#">Квадрокоптеры</a></li>
+					        <li class="catalog-item"><a href="#">Моноподы для селфи</a></li>
+					        <li class="catalog-item"><a href="#">Умные часы</a></li>
+					        <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
 					    </ul>
 					</li>
-					<li class="catalog-menu-item"><a href="">Доставка</a></li>
-					<li class="catalog-menu-item"><a href="">Гарантия</a></li>
-					<li class="catalog-menu-item"><a href="">Контакты</a></li>
+					<li class="catalog-menu-item"><a href="#">Доставка</a></li>
+					<li class="catalog-menu-item"><a href="#">Гарантия</a></li>
+					<li class="catalog-menu-item"><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -48,9 +51,9 @@
 		<div class="breadcrumb-wrapper">
 			<h1 class="content-title">Моноподы для селфи</h1>
 			<ul class="breadcrumb">
-				<li class="breadcrumb-item"><a href="">Главная</a></li>
-				<li class="breadcrumb-item"><a href="">Каталог товаров</a></li>
-				<li class="breadcrumb-item"><a href="">Моноподы для селфи</a></li>
+				<li class="breadcrumb-item"><a href="#">Главная</a></li>
+				<li class="breadcrumb-item"><a href="#">Каталог товаров</a></li>
+				<li class="breadcrumb-item"><a href="#">Моноподы для селфи</a></li>
 			</ul>
 		</div>
 		<div class="content-filter-background">
@@ -103,44 +106,52 @@
 				<h2 class="visually-hidden">Список селфи-палок</h2>
 				<ul class="product-list">
 					<li class="product-item">
-						<img src="img/content/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка" class="product-image">
-						<div class="product-text-wrapper">
+						<div class="product-image-wrapper">
+							<img src="img/content/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка" class="product-image">
+						</div>
+						<a href="#" class="product-text-wrapper">
 							<h3 class="product-title">Любительская селфи-палка</h3>
 							<span class="product-price">500 руб.</span>
-						</div>
+						</a>
 						<div class="product-hover">
 							<button type="button" class="product-buy button-device">В корзину</button>
 							<button type="button" class="product-compare">Добавить к сравнению</button>
 						</div>
 					</li>
 					<li class="product-item">
-						<img src="img/content/item-2.jpg" width="360" height="380" alt="Любительская селфи-палка" class="product-image">
-						<div class="product-text-wrapper">
+						<div class="product-image-wrapper">
+							<img src="img/content/item-2.jpg" width="360" height="380" alt="Любительская селфи-палка" class="product-image">
+						</div>
+						<a href="#" class="product-text-wrapper">
 							<h3 class="product-title">Профессиональная селфи-палка</h3>
 							<span class="product-price">1500 руб.</span>
-						</div>
+						</a>
 						<div class="product-hover">
 							<button type="button" class="product-buy button-device">В корзину</button>
 							<button type="button" class="product-compare">Добавить к сравнению</button>
 						</div>
 					</li>
 					<li class="product-item">
-						<img src="img/content/item-3.jpg" width="360" height="380" alt="Любительская селфи-палка" class="product-image">
-						<div class="product-text-wrapper">
+						<div class="product-image-wrapper">
+							<img src="img/content/item-3.jpg" width="360" height="380" alt="Любительская селфи-палка" class="product-image">
+						</div>
+						<a href="#" class="product-text-wrapper">
 							<h3 class="product-title">Непотопляемая селфи-палка</h3>
 							<span class="product-price">2500 руб.</span>
-						</div>
+						</a>
 						<div class="product-hover">
 							<button type="button" class="product-buy button-device">В корзину</button>
 							<button type="button" class="product-compare">Добавить к сравнению</button>
 						</div>
 					</li>
 					<li class="product-item">
-						<img src="img/content/item-4.jpg" width="360" height="380" alt="Любительская селфи-палка" class="product-image">
-						<div class="product-text-wrapper">
+						<div class="product-image-wrapper">
+							<img src="img/content/item-4.jpg" width="360" height="380" alt="Любительская селфи-палка" class="product-image">
+						</div>
+						<a href="#" class="product-text-wrapper">
 							<h3 class="product-title">Селфи-палка «Следуй за мной»</h3>
 							<span class="product-price">4900 руб.</span>
-						</div>
+						</a>
 						<div class="product-hover">
 							<button type="button" class="product-buy button-device">В корзину</button>
 							<button type="button" class="product-compare">Добавить к сравнению</button>
