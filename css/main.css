@@ -1291,7 +1291,6 @@ input[type="radio"].visually-hidden {
 .header-wrapper {
 	width: 1160px;
 	margin-right: auto;
-	margin-bottom: 120px;
 	margin-left: auto;
 	padding-right: 60px;
 	padding-bottom: 20px;
@@ -1437,7 +1436,7 @@ input[type="radio"].visually-hidden {
 
 /* Серая декорация, вариант №1  */
 .content-filter-background {
-	background: linear-gradient(to right, #eee 355px, #fff 355px);
+	background: linear-gradient(to right, #eee 702px, #fff 702px);
 }
 
 /* Серая декорация, вариант №2
@@ -1457,7 +1456,6 @@ input[type="radio"].visually-hidden {
 }
 
 .product-list {
-	background-color: #fff;
 	display: flex;
 	width: 850px;
 	flex-wrap: wrap;
@@ -1601,4 +1599,102 @@ input[type="radio"].visually-hidden {
 
 .product-compare:active {
 	opacity: 0.2;
+}
+
+
+/* slider */
+
+.slider {
+	position: relative;
+	background-color: #f7e296;
+	background: linear-gradient(to bottom, #f7e296 125px, #fff 125px);
+	margin-bottom: 80px;
+}
+
+.slider-wrapper {
+	display: flex;
+}
+
+.slider-image-wrapper {
+	margin-right: 120px;
+	margin-left: 90px;
+}
+
+.slider-button {
+	margin-bottom: 48px;
+}
+
+.slider-content-wrapper {
+	padding-top: 32px;
+}
+
+.slider-content-wrapper h3 {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: bold;
+	font-size: 47px;
+	margin-bottom: 23px;
+	position: relative;
+}
+
+.slider-content-wrapper h3:before {
+	position: absolute;
+	top: -42px;
+	display: block;
+	content: " ";
+	height: 7px;
+	width: 100px;
+	background-color: #fff;
+}
+
+.slider-content-wrapper p {
+	line-height: 30px;
+	margin-bottom: 40px;
+}
+
+.slider-control {
+	position: absolute;
+	top: 307px;
+	right: 55px;
+}
+
+.slider-control label {
+	display: inline-block;
+	vertical-align: top;
+	width: 12px;
+	height: 12px;
+	background-image: url(../img/svg/slider-button-empty.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	font-size: 0;
+	margin-right: 20px;
+}
+
+.slider-control label:last-child {
+	margin-right: 0;
+}
+
+#slider-one:checked ~ .slider-control label[for="slider-one"],
+#slider-two:checked ~ .slider-control label[for="slider-two"],
+#slider-three:checked ~ .slider-control label[for="slider-three"] {
+	background-image: url(../img/svg/slider-button.svg);
+}
+
+.slider-table tr:first-child {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: normal;
+	font-size: 36px;
+	margin-bottom: 5px;
+}
+
+.slider-table tr:first-child td {
+	padding-bottom: 8px;
+}
+
+.slider-table tr:nth-child(2) {
+	font-size: 13px;
+}
+
+.slider-table {
+	width: 540px;
 }
