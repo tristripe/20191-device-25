@@ -16,7 +16,7 @@
 				<div class="header-service">
 					<form action="https://echo.htmlacademy.ru" method="POST" class="header-search-form">
 						<input type="search" placeholder="Поиск по сайту" class="header-search">
-						<button type="submit" class="header-submit">Найти</button>
+						<button type="submit" class="header-submit" tabindex="-1">Найти</button>
 					</form>
 					<ul class="header-service-list">
 						<li class="header-service-item"><a href="#" class="header-service-enter">Войти</a></li>
@@ -49,25 +49,24 @@
 			<div class="main-wrapper">
 				<section class="slider">
 					<h2 class="visually-hidden">Горячие товары</h2>
-					<input class="visually-hidden" type="radio" id="slider-one" name="toggle" checked>
-					<input class="visually-hidden" type="radio" id="slider-two" name="toggle">
-					<input class="visually-hidden" type="radio" id="slider-three" name="toggle">
-					<div class="slider-control">
-						<label class="slider-label" for="slider-one">Первый слайд</label>
-						<label class="slider-label" for="slider-two">Второй слайд</label>
-						<label class="slider-label" for="slider-three">Третий слайд</label>
-					</div>
 					<ul class="slider-list">
-						<li class="slider-wrapper">
+						<li class="slider-wrapper slider-active">
 							<div class="slider-image-wrapper">
 								<img src="img/slider/slider-1.png" width="384" height="486" alt="Самая длинная селфи-палка">
 							</div>
 							<div class="slider-content-wrapper">
 								<h3>Делай селфи, как Бен Стиллер!</h3>
-								<p>Самая длинная палка для селфи доступна в нашем магазине.</p> 
-								<p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+								<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 								<div class="slider-button">
 									<a href="#" class="button-device">Подробнее</a>
+									<input class="visually-hidden" type="radio" id="slider-one" name="toggle" checked>
+									<input class="visually-hidden" type="radio" id="slider-two" name="toggle">
+									<input class="visually-hidden" type="radio" id="slider-three" name="toggle">
+									<div class="slider-control">
+										<label class="slider-label" for="slider-one">Первый слайд</label>
+										<label class="slider-label" for="slider-two">Второй слайд</label>
+										<label class="slider-label" for="slider-three">Третий слайд</label>
+									</div>
 								</div>
 								<table class="slider-table">
 									<tr>
@@ -83,48 +82,106 @@
 								</table>
 							</div>
 						</li>
-						<li class="slider-wrapper"></li>
-						<li class="slider-wrapper"></li>
+						<li class="slider-wrapper">
+							<div class="slider-image-wrapper">
+								<img src="img/slider/slider-2.png" width="345" height="485" alt="Этот браслет смотрит на тебя осуждающе">
+							</div>
+							<div class="slider-content-wrapper">
+								<h3>Худеем правильно!</h3>
+								<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+								<div class="slider-button">
+									<a href="#" class="button-device">Подробнее</a>
+									<input class="visually-hidden" type="radio" id="slider-one" name="toggle" checked>
+									<input class="visually-hidden" type="radio" id="slider-two" name="toggle">
+									<input class="visually-hidden" type="radio" id="slider-three" name="toggle">
+									<div class="slider-control">
+										<label class="slider-label" for="slider-one">Первый слайд</label>
+										<label class="slider-label" for="slider-two">Второй слайд</label>
+										<label class="slider-label" for="slider-three">Третий слайд</label>
+									</div>
+								</div>
+								<table class="slider-table">
+									<tr>
+										<td>48 часов</td>
+									</tr>
+									<tr>
+										<td>Без подзарядки</td>
+									</tr>
+								</table>
+							</div>
+						</li>
+						<li class="slider-wrapper">
+							<div class="slider-image-wrapper">
+								<img src="img/slider/slider-3.png" width="520" height="417" alt="Роботы захватят мир">
+							</div>
+							<div class="slider-content-wrapper">
+								<h3>Порхает как бабочка, жалит как пчела!</h3>
+								<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+								<div class="slider-button">
+									<a href="#" class="button-device">Подробнее</a>
+									<input class="visually-hidden" type="radio" id="slider-one" name="toggle" checked>
+									<input class="visually-hidden" type="radio" id="slider-two" name="toggle">
+									<input class="visually-hidden" type="radio" id="slider-three" name="toggle">
+									<div class="slider-control">
+										<label class="slider-label" for="slider-one">Первый слайд</label>
+										<label class="slider-label" for="slider-two">Второй слайд</label>
+										<label class="slider-label" for="slider-three">Третий слайд</label>
+									</div>
+								</div>
+								<table class="slider-table">
+									<tr>
+										<td>800 м</td>
+										<td>50 м</td>
+									</tr>
+									<tr>
+										<td>Дальность полета</td>
+										<td>Радиус поражения</td>
+									</tr>
+								</table>
+							</div>
+						</li>
 					</ul>
 				</section>
 				<section class="show">
 					<h2 class="visually-hidden">Наши лучшие гаджеты</h2>
-					<div class="show-item">
-						<a href="#" class="show-item-image-wrapper">
-							<img src="img/popular-1.png" alt="Очки виртуальной реальности" width="160" height="160">
-						</a>
-						<b>Виртуальная реальность</b>
-					</div>
-					<div class="show-item">
-						<a href="#" class="show-item-image-wrapper">
-							<img src="img/popular-2.png" alt="Моноподы для селфи" width="160" height="160">
-						</a>
-						<b>Моноподы для селфи</b>
-					</div>
-					<div class="show-item">
-						<a href="#" class="show-item-image-wrapper">
-							<img src="img/popular-3.png" alt="Экшн-камеры" width="160" height="160">
-						</a>
-						<b>Экшн-камеры</b>
-					</div>
-					<div class="show-item">
-						<a href="#" class="show-item-image-wrapper">
-							<img src="img/popular-4.png" alt="Фитнес-браслеты" width="160" height="160">
-						</a>
-						<b>Фитнес-браслеты</b>
-					</div>
-					<div class="show-item">
-						<a href="#" class="show-item-image-wrapper">
-							<img src="img/popular-5.png" alt="Умные часы" width="160" height="160">
-						</a>
-						<b>Умные часы</b>
-					</div>
-					<div class="show-item">
-						<a href="#" class="show-item-image-wrapper">
-							<img src="img/popular-6.png" alt="Квадрокоптеры" width="160" height="160">
-						</a>
-						<b>Квадрокоптеры</b>
-					</div>
+					<ul class="show-list">
+						<li class="show-item">
+							<a href="#" class="show-item-image-wrapper">
+								<img src="img/popular-1.png" alt="Очки виртуальной реальности" width="160" height="160">
+								<b>Виртуальная реальность</b>
+							</a>
+						</li>
+						<li class="show-item">
+							<a href="#" class="show-item-image-wrapper">
+								<img src="img/popular-2.png" alt="Моноподы для селфи" width="160" height="160">
+								<b>Моноподы для селфи</b>
+							</a>
+						</li>
+						<li class="show-item">
+							<a href="#" class="show-item-image-wrapper">
+								<img src="img/popular-3.png" alt="Экшн-камеры" width="160" height="160">
+								<b>Экшн-камеры</b>
+							</a>
+						</li>
+						<li class="show-item">
+							<a href="#" class="show-item-image-wrapper">
+								<img src="img/popular-4.png" alt="Фитнес-браслеты" width="160" height="160">
+								<b>Фитнес-браслеты</b>
+							</a>
+						</li>
+						<li class="show-item">
+							<a href="#" class="show-item-image-wrapper">
+								<img src="img/popular-5.png" alt="Умные часы" width="160" height="160">
+								<b>Умные часы</b>
+							</a>
+						</li>
+						<li class="show-item">
+							<a href="#" class="show-item-image-wrapper">
+								<img src="img/popular-6.png" alt="Квадрокоптеры" width="160" height="160">
+								<b>Квадрокоптеры</b>
+							</a>
+						</li>
+					</ul>
 				</section>
 			</div>
 			<div class="benefits-background">
@@ -169,20 +226,32 @@
 					</article>
 				</section>
 			</div>
-			<section class="firms">
-				<a href="#" class="firms-item">
-					
-				</a>
-				<a href="#" class="firms-item">
-					
-				</a>
-				<a href="#" class="firms-item">
-					
-				</a>
-				<a href="#" class="firms-item">
-					
-				</a>
-			</section>
+			<ul class="firms">
+				<li>
+					<a href="#" class="firms-item">
+						<span class="visually-hidden">DJI - фирма, которая нам поставляет квадрокоптеры!</span>
+						<img src="img/logo-1-gray.png" width="260" height="100" alt="Компания DJI">	
+					</a>
+				</li>
+				<li>
+					<a href="#" class="firms-item">
+						<span class="visually-hidden">SP Gadgets - настоящее немецкое качество гаджетов.</span>
+						<img src="img/logo-2-gray.png" width="260" height="100" alt="Компания SP Gadgets">	
+					</a>
+				</li>
+				<li>
+					<a href="#" class="firms-item">
+						<span class="visually-hidden">GoPro - выбор для настоящих ценителей экшн-камер!</span>
+						<img src="img/logo-3-gray.png" width="260" height="100" alt="Компания GoPro">	
+					</a>
+				</li>
+				<li>
+					<a href="#" class="firms-item">
+						<span class="visually-hidden">Очки виртуальной реальности от VIVE.</span>
+						<img src="img/logo-4-gray.png" width="260" height="100" alt="Компания VIVE">	
+					</a>
+				</li>
+			</ul>
 			<section class="content-block">
 				<section class="about">
 					<h2 class="about-title">О нас</h2>
@@ -252,7 +321,11 @@
 				</ul>
 				<a href="https://htmlacademy.ru/" class="academy-link">
 					<span class="visually-hidden">Сделано в htmlAcademy</span>
-					<svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09" aria-hidden="true"><path fill="#FFC600" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
+					<svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09" aria-labelledby="academy-title academy-desc" role="contentinfo">
+					<title id="academy-title">HtmlAcademy - здесь может быть ваша вёрстка</title>
+					<desc id="academy-desc">Этот текст служит для лучшей доступности элемента</desc>
+					<path fill="#FFC600" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
+					</svg>
 				</a>
 			</div>
 		</div>
