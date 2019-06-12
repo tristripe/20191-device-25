@@ -629,21 +629,23 @@ body {
 
 .options-background {
 	background: #dcdcdc;
-	background: linear-gradient(to right, #dcdcdc 702px, #ebebeb 702px);
+	background: linear-gradient(to right, #dcdcdc 32%, #ebebeb 32%);
 }
 
 .options-wrapper {
 	width: 1160px;
-	padding-top: 7px;
-	padding-bottom: 7px;
 	margin-right: auto;
 	margin-left: auto;
 	display: flex;
 }
 
 .options-filter {
+	padding-top: 7px;
+	padding-right: 179px;
+	padding-bottom: 7px;
 	padding-left: 60px;
-	padding-right: 250px;
+	margin-right: 71px;
+	background-color: #dcdcdc;
 }
 
 .options-filter h3,
@@ -1436,7 +1438,7 @@ input[type="radio"].visually-hidden {
 
 /* Серая декорация, вариант №1  */
 .content-filter-background {
-	background: linear-gradient(to right, #eee 702px, #fff 702px);
+	background: linear-gradient(to right, #eee 32%, #fff 32%);
 }
 
 /* Серая декорация, вариант №2
