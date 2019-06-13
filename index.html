@@ -45,27 +45,28 @@
 			</div>
 		</header>
 		<main>
-			<h1 class="visually-hidden">Девайс, интернет-магазин гаджетов</h1>	
+			<h1 class="visually-hidden">Девайс, интернет-магазин гаджетов</h1>
 			<div class="main-wrapper">
 				<section class="slider">
 					<h2 class="visually-hidden">Горячие товары</h2>
+					<input class="visually-hidden" type="radio" id="slider-input-1" name="toggle" checked>
+					<input class="visually-hidden" type="radio" id="slider-input-2" name="toggle">
+					<input class="visually-hidden" type="radio" id="slider-input-3" name="toggle">
 					<ul class="slider-list">
-						<li class="slider-wrapper slider-active">
+						<li class="slider-wrapper" id="slide-1">
 							<div class="slider-image-wrapper">
 								<img src="img/slider/slider-1.png" width="384" height="486" alt="Самая длинная селфи-палка">
 							</div>
 							<div class="slider-content-wrapper">
-								<h3>Делай селфи, как Бен Стиллер!</h3>
+								<b>Делай селфи,</b>
+								<b>как Бен Стиллер!</b>
 								<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 								<div class="slider-button">
 									<a href="#" class="button-device">Подробнее</a>
-									<input class="visually-hidden" type="radio" id="slider-one" name="toggle" checked>
-									<input class="visually-hidden" type="radio" id="slider-two" name="toggle">
-									<input class="visually-hidden" type="radio" id="slider-three" name="toggle">
 									<div class="slider-control">
-										<label class="slider-label" for="slider-one">Первый слайд</label>
-										<label class="slider-label" for="slider-two">Второй слайд</label>
-										<label class="slider-label" for="slider-three">Третий слайд</label>
+										<label class="slider-label" for="slider-input-1">Первый слайд</label>
+										<label class="slider-label" for="slider-input-2">Второй слайд</label>
+										<label class="slider-label" for="slider-input-3">Третий слайд</label>
 									</div>
 								</div>
 								<table class="slider-table">
@@ -75,29 +76,27 @@
 										<td>Карбон</td>
 									</tr>
 									<tr>
-										<td>Высота палки</td>
+										<td>Длина палки</td>
 										<td>Вес палки</td>
 										<td>Материал</td>
 									</tr>
 								</table>
 							</div>
 						</li>
-						<li class="slider-wrapper">
+						<li class="slider-wrapper" id="slide-2">
 							<div class="slider-image-wrapper">
 								<img src="img/slider/slider-2.png" width="345" height="485" alt="Этот браслет смотрит на тебя осуждающе">
 							</div>
 							<div class="slider-content-wrapper">
-								<h3>Худеем правильно!</h3>
+								<b>Худеем</b>
+								<b>правильно!</b>
 								<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 								<div class="slider-button">
 									<a href="#" class="button-device">Подробнее</a>
-									<input class="visually-hidden" type="radio" id="slider-one" name="toggle" checked>
-									<input class="visually-hidden" type="radio" id="slider-two" name="toggle">
-									<input class="visually-hidden" type="radio" id="slider-three" name="toggle">
 									<div class="slider-control">
-										<label class="slider-label" for="slider-one">Первый слайд</label>
-										<label class="slider-label" for="slider-two">Второй слайд</label>
-										<label class="slider-label" for="slider-three">Третий слайд</label>
+										<label class="slider-label" for="slider-input-1">Первый слайд</label>
+										<label class="slider-label" for="slider-input-2">Второй слайд</label>
+										<label class="slider-label" for="slider-input-3">Третий слайд</label>
 									</div>
 								</div>
 								<table class="slider-table">
@@ -110,22 +109,19 @@
 								</table>
 							</div>
 						</li>
-						<li class="slider-wrapper">
+						<li class="slider-wrapper" id="slide-3">
 							<div class="slider-image-wrapper">
 								<img src="img/slider/slider-3.png" width="520" height="417" alt="Роботы захватят мир">
 							</div>
 							<div class="slider-content-wrapper">
-								<h3>Порхает как бабочка, жалит как пчела!</h3>
+								<b>Порхает как бабочка, жалит как пчела!</b>
 								<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 								<div class="slider-button">
 									<a href="#" class="button-device">Подробнее</a>
-									<input class="visually-hidden" type="radio" id="slider-one" name="toggle" checked>
-									<input class="visually-hidden" type="radio" id="slider-two" name="toggle">
-									<input class="visually-hidden" type="radio" id="slider-three" name="toggle">
 									<div class="slider-control">
-										<label class="slider-label" for="slider-one">Первый слайд</label>
-										<label class="slider-label" for="slider-two">Второй слайд</label>
-										<label class="slider-label" for="slider-three">Третий слайд</label>
+										<label class="slider-label" for="slider-input-1">Первый слайд</label>
+										<label class="slider-label" for="slider-input-2">Второй слайд</label>
+										<label class="slider-label" for="slider-input-3">Третий слайд</label>
 									</div>
 								</div>
 								<table class="slider-table">
@@ -188,7 +184,7 @@
 				<section class="benefits">
 					<ul class="benefits-control">
 						<li class="benefits-item">
-							<button type="button" class="button-benefits">Доставка</button>
+							<button type="button" class="button-benefits button-benefits-active">Доставка</button>
 						</li>
 						<li class="benefits-item">
 							<button type="button" class="button-benefits">Гарантия</button>
@@ -257,7 +253,7 @@
 					<h2 class="about-title">О нас</h2>
 					<div class="about-text-container">
 						<p class="about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-						<p class="about-text ">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+						<p class="about-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
 					</div>
 					<ul class="about-list">
 						<li class="about-item">Деловые Линии</li>
@@ -269,7 +265,7 @@
 				<section class="contacts">
 					<h2 class="contacts-title">Контакты</h2>
 					<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-					<a href="" class="map-link">
+					<a href="#" class="map-link">
 						<img src="img/map.jpg" width="560" height="222" alt="Адрес магазина - г. Москва, ул. Строителей 15">
 					</a>
 					<button class="contacts-button button-device">Напишите нам</button>
@@ -359,4 +355,5 @@
 		</div>
 	</div>
 </body>
+<script src="js/script.js"></script>
 </html>

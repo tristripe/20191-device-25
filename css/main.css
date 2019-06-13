@@ -312,28 +312,35 @@ body {
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 65px;
 }
 
 .show-item {
-	display: flex;
-	flex-direction: column;
 	width: 160px;
 }
+
+
 
 .show-item-image-wrapper {
-	width: 160px;
-	height: 160px;
-	background-color: #f7e296;
 	object-fit: cover;
+	display: block;
+	position: relative;
 }
 
-.show-item-image-wrapper:hover {
+.show-item-image-wrapper:before {
+	position: absolute;
+	content: " ";
+	height: 160px;
+	width: 160px;
+	z-index: -1;
+	background-color: #f7e296;
+}
+
+.show-item:hover .show-item-image-wrapper:before{
 	background-color: #f0c52e;
 }
 
-.show-item img:active,
-.show-item b:active {
+.show-item:active .show-item-image-wrapper img,
+.show-item:active .show-item-image-wrapper b {
 	opacity: 0.3;
 }
 
@@ -1205,6 +1212,30 @@ input[type="radio"].visually-hidden {
 	top: 200px;
 	left: 500px;
 	display: none;
+	z-index: 4;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.popup-show {
+	display: block;
+	animation: bounce 0.6s;
 }
 
 .contacts-popup {
@@ -1213,13 +1244,13 @@ input[type="radio"].visually-hidden {
 	margin-left: auto;
 }
 
-.contacts-popup-section {
-	display: flex;
-	flex-wrap: wrap;
-}
-
 .contacts-popup-section :first-child {
 	margin-right: 40px;
+}
+
+.contacts-popup-form {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .contacts-popup-item {
@@ -1349,12 +1380,12 @@ input[type="radio"].visually-hidden {
 	background-color: #f7e296;
 	padding-top: 22px;
 	padding-right: 500px;
-	padding-bottom: 34px;
+	padding-bottom: 53px;
 	padding-left: 60px;
 	position: absolute;
 	top: 20px;
 	left: -60px;
-	z-index: 1;
+	z-index: 5;
 }
 
 .header-navigation-title:hover + .catalog-inner,
@@ -1601,6 +1632,13 @@ input[type="radio"].visually-hidden {
 	opacity: 0.2;
 }
 
+.button-benefits-active {
+    background-color: #000;
+    color: #f7e184;
+    width: 280px;
+    text-align: left;
+    padding-right: 149px;
+}
 
 /* slider */
 
@@ -1625,12 +1663,32 @@ input[type="radio"].visually-hidden {
 	position: relative;
 }
 
-.slider-wrapper.slider-active {
-	display: flex;
-}
-
 .slider-wrapper:nth-child(1)::after {
 	content: "01";
+	position: absolute;
+	display: block;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: bold;
+	font-size: 179px;
+	color: #fff;
+	top: -20px;
+	right: 0;
+}
+
+.slider-wrapper:nth-child(2)::after {
+	content: "02";
+	position: absolute;
+	display: block;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: bold;
+	font-size: 179px;
+	color: #fff;
+	top: -20px;
+	right: 0;
+}
+
+.slider-wrapper:nth-child(3)::after {
+	content: "03";
 	position: absolute;
 	display: block;
 	font-family: "Gilroy", "Arial", sans-serif;
@@ -1658,16 +1716,15 @@ input[type="radio"].visually-hidden {
 
 .slider-content-wrapper {
 	width: 500px;
-	padding-top: 32px;
+	padding-top: 78px;
 }
 
-.slider-content-wrapper h3 {
+.slider-content-wrapper b {
+	display: block;
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: bold;
 	font-size: 47px;
-	margin-bottom: 23px;
 	position: relative;
-	width: 390px;
 	z-index: 4;
 }
 
@@ -1690,7 +1747,8 @@ input[type="radio"].visually-hidden {
 .slider-control {
 	position: absolute;
 	top: 14px;
-	left: 385px;
+	right: 25px;
+	z-index: 6;
 }
 
 .slider-control label {
@@ -1710,11 +1768,18 @@ input[type="radio"].visually-hidden {
 	margin-right: 0;
 }
 
-#slider-one:checked ~ .slider-control label[for="slider-one"],
-#slider-two:checked ~ .slider-control label[for="slider-two"],
-#slider-three:checked ~ .slider-control label[for="slider-three"] {
+#slider-input-1:checked ~ .slider-list label[for="slider-input-1"],
+#slider-input-2:checked ~ .slider-list label[for="slider-input-2"],
+#slider-input-3:checked ~ .slider-list label[for="slider-input-3"] {
 	background-image: url(../img/svg/slider-button.svg);
 }
+
+#slider-input-1:checked ~ .slider-list #slide-1,
+#slider-input-2:checked ~ .slider-list #slide-2,
+#slider-input-3:checked ~ .slider-list #slide-3 {
+  display: flex;
+}
+
 
 .slider-table tr:first-child {
 	font-family: "Gilroy", "Arial", sans-serif;
@@ -1727,10 +1792,12 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 8px;
 }
 
+.slider-table tr td {
+	padding-right: 70px;
+}
+
+
 .slider-table tr:nth-child(2) {
 	font-size: 13px;
 }
 
-.slider-table {
-	width: 540px;
-}
