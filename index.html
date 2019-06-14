@@ -182,18 +182,22 @@
 			</div>
 			<div class="benefits-background">
 				<section class="benefits">
+					<h2 class="visually-hidden">Сейчас мы расскажем про наши преимущества!</h2>
+					<input class="visually-hidden" type="radio" id="benefits-input-1" name="benefits-toggle" checked>
+					<input class="visually-hidden" type="radio" id="benefits-input-2" name="benefits-toggle">
+					<input class="visually-hidden" type="radio" id="benefits-input-3" name="benefits-toggle">
 					<ul class="benefits-control">
-						<li class="benefits-item">
-							<button type="button" class="button-benefits button-benefits-active">Доставка</button>
+						<li>
+							<label class="button-benefits" for="benefits-input-1">Доставка</label>
 						</li>
-						<li class="benefits-item">
-							<button type="button" class="button-benefits">Гарантия</button>
+						<li>
+							<label class="button-benefits" for="benefits-input-2">Гарантия</label>	
 						</li>
-						<li class="benefits-item">
-							<button type="button" class="button-benefits">Кредит</button>
+						<li>
+							<label class="button-benefits" for="benefits-input-3">Кредит</label>
 						</li>
 					</ul>
-					<article class="benefits-block block-show">
+					<article class="benefits-block" id="benefits-article-1">
 						<div class="benefits-text">
 							<h3>Доставка</h3>
 							<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -202,7 +206,7 @@
 							<img src="img/delivery.png" alt="Доставка товара" width="200" height="200">
 						</div>
 					</article>
-					<article class="benefits-block">
+					<article class="benefits-block" id="benefits-article-2">
 						<div class="benefits-text">
 							<h3>Гарантия</h3>
 							<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>	
@@ -211,7 +215,7 @@
 							<img src="img/warranty.png" alt="Гарантия на товар" width="200" height="200">
 						</div>
 					</article>
-					<article class="benefits-block">
+					<article class="benefits-block" id="benefits-article-3">
 						<div class="benefits-text">
 							<h3>Кредит</h3>
 							<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>			
@@ -279,17 +283,17 @@
 					<img src="img/logo-footer.png" alt="Интернет-магазин DEVICE" width="163" height="35">
 				</a>
 				<ul class="footer-service-list">
-					<li class="footer-service-item"><a href="" class="footer-service-enter">Войти</a></li>
-					<li class="footer-service-item"><a href="" class="footer-service-compare">Сравнить</a></li>
-					<li class="footer-service-item"><a href="" class="footer-service-cart">Корзина</a></li>
+					<li class="footer-service-item"><a href="#" class="footer-service-enter">Войти</a></li>
+					<li class="footer-service-item"><a href="#" class="footer-service-compare">Сравнить</a></li>
+					<li class="footer-service-item"><a href="#" class="footer-service-cart">Корзина</a></li>
 				</ul>
 			</div>
 			<div class="footer-address-wrapper">
 				<p class="footer-address">г.Москва, ул. Строителей, 15</p>
 				<ul class="footer-information-list">
-					<li class="footer-information-item"><a href="">Доставка</a></li>
-					<li class="footer-information-item"><a href="">Гарантия</a></li>
-					<li class="footer-information-item"><a href="">Контакты</a></li>
+					<li class="footer-information-item"><a href="#">Доставка</a></li>
+					<li class="footer-information-item"><a href="#">Гарантия</a></li>
+					<li class="footer-information-item"><a href="#">Контакты</a></li>
 				</ul>
 				<a href="tel:+74954959595" class="footer-phone">Тел.: +7 (495) 495-95-95</a>
 			</div>

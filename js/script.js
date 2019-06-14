@@ -7,6 +7,7 @@ var mapLink = document.querySelector(".map-link");
 var mapPopup = document.querySelector(".map-popup");
 var mapClose = document.querySelector(".map-popup-close");
 
+
 contactsLink.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	contactsPopup.classList.add("popup-show");

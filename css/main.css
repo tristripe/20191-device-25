@@ -383,7 +383,7 @@ body {
 	width: 483px;
 }
 
-.benefits-item {
+.benefits-control li {
 	margin-bottom: 24px;
 }
 
@@ -1565,11 +1565,11 @@ input[type="radio"].visually-hidden {
 
 /* button for benefits */
 
+
 .button-benefits {
 	position: relative;
     display: inline-flex;
     justify-content: center;
-    align-items: center;
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: bold;
 	font-size: 18px;
@@ -1599,6 +1599,36 @@ input[type="radio"].visually-hidden {
 	left: 0;
 }
 
+#benefits-input-1:checked ~ .benefits-control label[for="benefits-input-1"],
+#benefits-input-2:checked ~ .benefits-control label[for="benefits-input-2"],
+#benefits-input-3:checked ~ .benefits-control label[for="benefits-input-3"] {
+	padding-right: 160px;
+	padding-left: 34px;
+	width: 290px;
+	color: #f7e184;
+	text-align: left;
+	background-color: #000;
+}
+
+#benefits-input-1:checked ~ .benefits-control label[for="benefits-input-1"]:before,
+#benefits-input-2:checked ~ .benefits-control label[for="benefits-input-2"]:before,
+#benefits-input-3:checked ~ .benefits-control label[for="benefits-input-3"]:before {
+	background-color: #000;
+
+}
+
+#benefits-input-1:checked ~ #benefits-article-1 {
+	display: flex;
+}
+
+#benefits-input-2:checked ~ #benefits-article-2 {
+	display: flex;
+}
+
+#benefits-input-3:checked ~ #benefits-article-3 {
+	display: flex;
+}
+
 .button-benefits:hover,
 .button-benefits:focus {
 	background-color: #f0c52e;
@@ -1607,9 +1637,9 @@ input[type="radio"].visually-hidden {
 .button-benefits:active {
     background-color: #000;
     color: #f7e184;
-    width: 275px;
+    width: 290px;
     text-align: left;
-    padding-right: 150px;
+    padding-right: 160px;
 }
 
 .button-benefits:active:before {
@@ -1630,14 +1660,6 @@ input[type="radio"].visually-hidden {
 
 .product-compare:active {
 	opacity: 0.2;
-}
-
-.button-benefits-active {
-    background-color: #000;
-    color: #f7e184;
-    width: 280px;
-    text-align: left;
-    padding-right: 149px;
 }
 
 /* slider */
