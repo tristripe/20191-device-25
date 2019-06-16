@@ -1389,12 +1389,16 @@ input[type="radio"].visually-hidden {
 	background-color: #f7e296;
 	padding-top: 22px;
 	padding-right: 500px;
-	padding-bottom: 53px;
+	padding-bottom: 18px;
 	padding-left: 60px;
 	position: absolute;
 	top: 20px;
 	left: -60px;
 	z-index: 5;
+}
+
+.catalog-inner li:nth-last-child(1) {
+	width: 100%;
 }
 
 .header-navigation-title:hover + .catalog-inner,
