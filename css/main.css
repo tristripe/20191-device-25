@@ -380,7 +380,7 @@ body {
 	margin-top: 0;
 	margin-bottom: 0;
 	border-right: 7px solid #000;
-	width: 483px;
+	width: 290px;
 }
 
 .benefits-control li {
@@ -391,9 +391,12 @@ body {
 	display: none;
 }
 
+.benefits-article-list {
+	width: 870px;
+}
+
 .benefits-text {
 	margin-top: 20px;
-	margin-right: 130px;
 	margin-left: 118px;
 }
 
@@ -410,6 +413,7 @@ body {
 .benefits-image-wrapper {
 	display: flex;
 	align-items: center;
+	width: 200px;
 }
 
 .firms {
@@ -962,8 +966,13 @@ input[type="radio"].visually-hidden {
 .input-radio:checked + label:hover,
 .input-checkbox + label:hover,
 .input-checkbox:checked + label:hover,
-.input-radio + label:hover,
-.input-radio + label:focus:before {
+.input-checkbox + label:focus:before,
+.input-checkbox:checked + label:focus:before,
+.input-radio + label:focus:before,
+.input-radio:checked + label:focus,
+.input-checkbox + label:focus,
+.input-checkbox:checked + label:focus,
+.input-radio + label:focus {
 	opacity: 0.6;
 }
 
@@ -1539,6 +1548,7 @@ input[type="radio"].visually-hidden {
 	padding-left: 34px;
 	color: #000;
 	text-decoration: none;
+	transition: 300ms;
 }
 
 .button-device:before {
@@ -1585,6 +1595,7 @@ input[type="radio"].visually-hidden {
 	color: #000;
 	text-decoration: none;
 	width: 160px;
+	transition: 300ms;
 }
 
 .button-benefits:before {
@@ -1614,18 +1625,11 @@ input[type="radio"].visually-hidden {
 #benefits-input-2:checked ~ .benefits-control label[for="benefits-input-2"]:before,
 #benefits-input-3:checked ~ .benefits-control label[for="benefits-input-3"]:before {
 	background-color: #000;
-
 }
 
-#benefits-input-1:checked ~ #benefits-article-1 {
-	display: flex;
-}
-
-#benefits-input-2:checked ~ #benefits-article-2 {
-	display: flex;
-}
-
-#benefits-input-3:checked ~ #benefits-article-3 {
+#benefits-input-1:checked ~ .benefits-article-list #benefits-article-1,
+#benefits-input-2:checked ~ .benefits-article-list #benefits-article-2,
+#benefits-input-3:checked ~ .benefits-article-list #benefits-article-3 {
 	display: flex;
 }
 
