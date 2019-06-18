@@ -4,7 +4,7 @@ var contactsClose = document.querySelector(".contacts-popup-close");
 var contactsName = document.querySelector(".contacts-popup-name");
 var contactsForm = document.querySelector(".contacts-popup-form");
 var mapLink = document.querySelector(".map-link");
-var mapPopup = document.querySelector(".map-popup");
+var mapPopup = document.querySelector(".map-popup-wrapper");
 var mapClose = document.querySelector(".map-popup-close");
 
 
