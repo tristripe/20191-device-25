@@ -423,6 +423,10 @@ body {
 	width: 200px;
 }
 
+.benefits-image-wrapper img {
+	flex-shrink: 0;
+}
+
 .firms {
 	display: flex;
 	justify-content: center;
@@ -1225,6 +1229,10 @@ input[type="radio"].visually-hidden {
 	opacity: 0.6;
 }
 
+.map-popup iframe {
+	border: 0;
+}
+
 /*
 .contacts-popup-wrapper {
 	background-color: #fff;
@@ -1885,4 +1893,5 @@ input[type="radio"].visually-hidden {
 .slider-table tr:nth-child(2) {
 	font-size: 13px;
 }
+
 
