@@ -704,6 +704,7 @@ body {
 
 .options-sort {
 	display: flex;
+	align-items: center;
 }
 
 .options-sort-arrows {
@@ -1096,9 +1097,17 @@ input[type="radio"].visually-hidden {
 	list-style: none;
 }
 
-.footer-service-list a {
+.footer-service-enter,
+.footer-service-compare,
+.footer-service-cart {
 	color: #fff;
 	opacity: 0.7;
+	text-decoration: none;
+}
+
+.user-exit {
+	color: #fff;
+	opacity: 0.3;
 	text-decoration: none;
 }
 
