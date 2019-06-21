@@ -1670,8 +1670,6 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 10px;
 	background-color: transparent;
 	z-index: 1;
-	padding-right: 34px;
-	padding-left: 34px;
 	color: #000;
 	text-decoration: none;
 	transition: 300ms;
@@ -1836,7 +1834,7 @@ input[type="radio"].visually-hidden {
 	font-weight: bold;
 	font-size: 179px;
 	color: #fff;
-	top: -20px;
+	top: -26px;
 	right: 0;
 }
 
@@ -1848,7 +1846,7 @@ input[type="radio"].visually-hidden {
 	font-weight: bold;
 	font-size: 179px;
 	color: #fff;
-	top: -20px;
+	top: -26px;
 	right: 0;
 }
 
@@ -1967,3 +1965,16 @@ input[type="radio"].visually-hidden {
 	font-size: 13px;
 }
 
+/* helpers and modifiers */
+
+.size-little {
+	width: 200px;
+}
+
+.size-medium {
+	width: 220px;
+}
+
+.size-large {
+	width: 260px;
+}
